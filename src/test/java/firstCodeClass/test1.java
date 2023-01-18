@@ -22,8 +22,9 @@ public class test1 {
         passwordInput.sendKeys("secret_sauce");
         loginButton.click();
 
+        WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
 //        Use the code below, to match the expected text of the first item in the shop
-        Assert.assertEquals("Sauce Labs Backpack","//*[@id=\"item_4_title_link\"]/div");
+        Assert.assertEquals("Sauce Labs Backpack", headerOne.getText());
 
 
 
