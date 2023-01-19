@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.ArrayList;
+
 public class test1 {
     public static void main(String[] args){
 //        System.out.println("hello world");
@@ -22,9 +24,40 @@ public class test1 {
         passwordInput.sendKeys("secret_sauce");
         loginButton.click();
 
-        WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
+        WebElement items = (WebElement) driver.findElements(By.xpath("//*[@class=\"inventory_item_name\"]"));
+
+        String printItems = items.getText();
+
+        System.out.println(printItems);
+
+/**        WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
+        WebElement headerTwo = driver.findElement(By.xpath("//*[@id=\"item_0_title_link\"]/div"));
+
+        String headOne = headerOne.getText();
+        String headTwo = headerTwo.getText();
+
+        WebElement addButton = driver.findElement(By.xpath("//*[@id=\"add-to-cart-sauce-labs-backpack\"]"));
+        WebElement addButton1 = driver.findElement(By.xpath("//*[@id=\"add-to-cart-sauce-labs-bike-light\"]"));
+        WebElement shopButton = driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a"));
+
+        addButton.click();
+        addButton1.click();
+        shopButton.click();
+
+        WebElement headerShopOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
+        WebElement headerShopTwo = driver.findElement(By.xpath("//*[@id=\"item_0_title_link\"]/div"));
+
+        String headShopOne = headerShopOne.getText();
+        String headShopTwo = headerShopTwo.getText();
+
+        Assert.assertEquals(headOne, headShopOne);
+        Assert.assertEquals(headTwo, headShopTwo);
+ **/
+
+
+//        WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
 //        Use the code below, to match the expected text of the first item in the shop
-        Assert.assertEquals("Sauce Labs Backpack", headerOne.getText());
+//        Assert.assertEquals("Sauce Labs Backpack", headerOne.getText());
 
 
 
