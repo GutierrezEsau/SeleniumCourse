@@ -30,7 +30,7 @@ public class test1 {
 
         System.out.println(printItems);
 
-/**        WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
+        WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
         WebElement headerTwo = driver.findElement(By.xpath("//*[@id=\"item_0_title_link\"]/div"));
 
         String headOne = headerOne.getText();
@@ -52,7 +52,7 @@ public class test1 {
 
         Assert.assertEquals(headOne, headShopOne);
         Assert.assertEquals(headTwo, headShopTwo);
- **/
+
 
 
 //        WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
