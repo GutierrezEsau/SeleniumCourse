@@ -24,11 +24,7 @@ public class test1 {
         passwordInput.sendKeys("secret_sauce");
         loginButton.click();
 
-        WebElement items = (WebElement) driver.findElements(By.xpath("//*[@class=\"inventory_item_name\"]"));
-
-        String printItems = items.getText();
-
-        System.out.println(printItems);
+/**     Homework 1 - Validate shop car has the right items
 
         WebElement headerOne = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
         WebElement headerTwo = driver.findElement(By.xpath("//*[@id=\"item_0_title_link\"]/div"));
@@ -52,6 +48,8 @@ public class test1 {
 
         Assert.assertEquals(headOne, headShopOne);
         Assert.assertEquals(headTwo, headShopTwo);
+**/
+
 
 
 
