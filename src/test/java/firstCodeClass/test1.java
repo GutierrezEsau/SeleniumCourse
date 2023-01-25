@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class test1 {
     public static void main(String[] args){
@@ -23,6 +23,13 @@ public class test1 {
         usernameInput.sendKeys("standard_user");
         passwordInput.sendKeys("secret_sauce");
         loginButton.click();
+
+/**    Homework 2 - Print all elements
+        List<WebElement> items = driver.findElements(By.xpath("//*[@class=\"inventory_item_name\"]"));
+        for (int i=0; i<items.size();i++){
+            System.out.println("Elemento:" + items.get(i).getText());
+        }
+**/
 
 /**     Homework 1 - Validate shop car has the right items
 
