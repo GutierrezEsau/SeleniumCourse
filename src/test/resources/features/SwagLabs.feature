@@ -1,0 +1,18 @@
+  Feature: SwagLabs Login tests
+  Scenario: Login with standard_user
+    Given I go to "https://www.saucedemo.com/"
+    Then I fill username "standard_user"
+    Then I fill password "secret_sauce"
+    Then I Click on Login
+    Then Just wait 5000
+    #Complete this exercise
+
+
+  Scenario: Login with locked_out_user and verify locked out message
+    Given I go to "https://www.saucedemo.com/"
+    Then I fill username "locked_out_user"
+    Then I fill password "secret_sauce"
+    Then I Click on Login
+    Then I verify error text
+    Then Just wait 5000
+    #Complete this exercise
