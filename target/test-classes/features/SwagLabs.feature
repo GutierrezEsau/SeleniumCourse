@@ -4,7 +4,7 @@
     Then I fill username "standard_user"
     Then I fill password "secret_sauce"
     Then I Click on Login
-    Then Just wait 10000
+    Then Just wait 5000
     #Complete this exercise
 
 
@@ -16,3 +16,17 @@
     Then I verify error text
     Then Just wait 5000
     #Complete this exercise
+
+  Scenario: Cart Scenario
+    Given I go to "https://www.saucedemo.com/"
+    Then I fill username "standard_user"
+    Then I fill password "secret_sauce"
+    Then I click on Login
+    Then I click on Sauce Labs Backpack
+    Then I check Sauce Labs Backpack change to "REMOVE"
+    Then I click on Cart button
+    Then I check on cart "Sauce Labs Backpack"
+    Then I click on Continue Shopping
+    Then I click on Cart button
+    Then I check on cart "Sauce Labs Backpack"
+    Then Just wait 5000

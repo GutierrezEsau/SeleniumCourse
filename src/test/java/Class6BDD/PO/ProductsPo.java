@@ -28,6 +28,15 @@ public class ProductsPo {
     @FindBy(id = "inventory_sidebar_link")
     WebElement allItemsSideMenuButton;
 
+    @FindBy(xpath = "//*[@id=\"add-to-cart-sauce-labs-backpack\"]")
+    WebElement sauceBackpackButton;
+
+    @FindBy(xpath = "//*[@id=\"remove-sauce-labs-backpack\"]")
+    WebElement addtocartLabel;
+
+    @FindBy(xpath = "//*[@id=\"shopping_cart_container\"]/a")
+    WebElement cartButton;
+
 
     public void clickBurgerButton() {
         this.burgerCornerButton.click();
@@ -47,6 +56,13 @@ public class ProductsPo {
         element.click();
     }
 
+    public void clickOnBackPack(){ clickElement(sauceBackpackButton);}
+
+    public void checkAddtoCartLabel(String expectedText){
+        Assert.assertEquals(expectedText, addtocartLabel.getText());
+    }
+
+    public void clickOnCartButton(){clickElement(cartButton);}
 
 
 

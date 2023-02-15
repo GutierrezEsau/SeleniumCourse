@@ -7,8 +7,6 @@ import io.cucumber.java.en.Then;
 
 public class LoginSteps extends DriverManager {
 
-
-
     LoginPo loginPo = new LoginPo(driver);
 
     @And("I fill username {string}")
@@ -19,7 +17,7 @@ public class LoginSteps extends DriverManager {
     @Then("I fill password {string}")
     public void iFillPassword(String text) { loginPo.fillPassword(text);}
 
-    @Then("I Click on Login")
+    @Then("I click on Login")
     public void IClickLoginButton() {loginPo.clickLoginButton();}
 
     @Then("I verify error text")
