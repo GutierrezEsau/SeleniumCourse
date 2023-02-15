@@ -30,3 +30,4 @@
     Then I click on Cart button
     Then I check on cart "Sauce Labs Backpack"
     Then Just wait 5000
+    #Homework_7
