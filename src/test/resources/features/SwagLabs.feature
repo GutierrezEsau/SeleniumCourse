@@ -12,7 +12,7 @@
     Given I go to "https://www.saucedemo.com/"
     Then I fill username "locked_out_user"
     Then I fill password "secret_sauce"
-    Then I Click on Login
+    Then I click on Login
     Then I verify error text
     Then Just wait 5000
     #Complete this exercise
@@ -30,4 +30,5 @@
     Then I click on Cart button
     Then I check on cart "Sauce Labs Backpack"
     Then Just wait 5000
+    Then just example
     #Homework_7
