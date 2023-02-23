@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"SwagLabs Login tests","Login with locked_out_user and verify locked out message","SUCCESS","2023-02-23T12:54:42.4759435-08:00[America/Tijuana]","0.0","7.97"

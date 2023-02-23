@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="SwagLabs Login tests" skipped="0" tests="3" time="34.61" timestamp="2023-02-23 12:54:26"><testcase name="Login with standard_user"/><testcase name="Login with locked_out_user and verify locked out message"/><testcase name="Cart Scenario"/></testsuite>

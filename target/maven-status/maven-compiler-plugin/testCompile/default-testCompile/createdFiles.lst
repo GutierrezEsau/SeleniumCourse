@@ -1,9 +1,12 @@
-Class6BDD\steps\CommonSteps.class
 Class6BDD\PO\LoginPo.class
-Class6BDD\Runner.class
+Class6BDD\PO\CartPo.class
+Class6BDD\steps\CartSteps.class
 Class6BDD\SwagLabsTests.class
 Class6BDD\PO\ProductsPo.class
 Class6BDD\steps\LoginSteps.class
-firstCodeClass\test1.class
 Class6BDD\driver\DriverBase.class
 Class6BDD\driver\DriverManager.class
+Class6BDD\steps\CommonSteps.class
+Class6BDD\steps\ProductSteps.class
+Class6BDD\Runner.class
+firstCodeClass\test1.class

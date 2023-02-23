@@ -3,7 +3,7 @@
     Given I go to "https://www.saucedemo.com/"
     Then I fill username "standard_user"
     Then I fill password "secret_sauce"
-    Then I Click on Login
+    Then I click on Login
     Then Just wait 5000
     #Complete this exercise
 
